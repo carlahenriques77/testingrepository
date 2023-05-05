@@ -1,0 +1,9 @@
+.styleStart h1 {
+    font-size: 3.5em;
+    color: black;
+}
+
+.styleStart p {
+    margin-bottom: 2em;
+    color: #FFB3D1;
+}

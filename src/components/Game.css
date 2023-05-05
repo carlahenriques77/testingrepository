@@ -1,0 +1,138 @@
+.styleGame {
+  font-style: 2.5em;
+}
+
+.styleScore span {
+  font-weight: bold;
+}
+
+.styleTip span {
+  color: pink;
+}
+
+.wordContainer {
+  margin: 1.5em;
+  padding: 1.5em;
+  border: 20px solid black;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.wrongLetterSquare {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.styleWrongLetter {
+  font-size: 35px;
+  line-height: 1.5;
+  text-align: center;
+  border: 3px solid #000;
+  height: 50px;
+  width: 50px;
+  text-transform: uppercase;
+  background-color: rgb(255, 80, 80);
+  color: black;
+  font-weight: bold;
+  transition: height 15s;
+  box-shadow: 10px 10px 10px black;
+}
+
+li {
+  list-style-type: none;
+}
+
+.styleBlankSquare {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid #000;
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: white;
+  font-weight: bold;
+  list-style-type: none;
+}
+
+.styleLetter {
+  font-size: 70px;
+  line-height: 1.5;
+  border: 3px solid #000;
+  height: 100px;
+  width: 100px;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: black;
+  font-weight: bold;
+  transition: color 0.5s;
+  box-shadow: 10px 10px 10px black;
+  list-style-type: none;
+}
+
+.letterContainer p {
+  margin-bottom: 1.2em;
+}
+
+.hiddenWord {
+  display: none;
+}
+
+.letterContainer form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.letterContainer input {
+  height: 50px;
+  width: 50px;
+  font-size: 2em;
+  text-align: center;
+  margin-right: 1em;
+}
+
+.showWord .hiddenword {
+  display: block;
+}
+
+.hiddenword {
+  display: none;
+  animation: show 0.5s;
+}
+
+@keyframes show {
+  from {
+    opacity: 0;
+    transform: translate3d(-30px, 0, 0);
+  }
+  to {
+    opacity: 1;
+    transform: translate(0, 0, 0);
+  }
+}
+
+.cheatingbutton {
+  background: #ff559d;
+  color: black;
+  border: 2px solid black;
+  height: 50px;
+  width: 100%;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 1.2em;
+  cursor: pointer;
+  transition: 0.4s;
+}
+
+.cheatingbutton:hover {
+  background: #ff559cd2;
+}
+
+.hintspan {
+  color: black;
+  margin-top: 10px;
+  display: block;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
